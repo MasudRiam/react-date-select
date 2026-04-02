@@ -10,8 +10,18 @@
   "author": "Masud Parvez Riam",
   "license": "ISC",
   "type": "commonjs",
-  "dependencies": {
+  "peerDependencies": {
     "react": "^16.14.0",
     "react-dom": "^16.14.0"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.29.0",
+    "@babel/preset-env": "^7.29.2",
+    "@babel/preset-react": "^7.28.5",
+    "babelify": "^10.0.0",
+    "browserify": "^17.0.1"
+  },
+  "volta": {
+    "node": "16.20.2"
   }
 }
