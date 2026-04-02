@@ -1,0 +1,19 @@
+git rm -r --cached node_modules
+git add .gitignore
+git commit -m "Remove node_modules from tracking"
+git push
+```
+
+The `--cached` flag removes it from git only — it won't delete the folder from your computer.
+
+---
+
+**Full recommended `.gitignore` for Node.js projects:**
+```
+node_modules/
+.env
+.env.local
+dist/
+build/
+.DS_Store
+*.log
