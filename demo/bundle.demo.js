@@ -29002,7 +29002,7 @@ function DateRangePicker(_ref) {
       val = _e$target.value;
     onChange(_objectSpread(_objectSpread({}, value), {}, _defineProperty({}, name, val)));
   };
-  return /*#__PURE__*/_react["default"].createElement("div", null, /*#__PURE__*/_react["default"].createElement("label", null, "From:", /*#__PURE__*/_react["default"].createElement("input", {
+  return /*#__PURE__*/_react["default"].createElement(_react["default"].Fragment, null, /*#__PURE__*/_react["default"].createElement("div", null, /*#__PURE__*/_react["default"].createElement("label", null, "From:", /*#__PURE__*/_react["default"].createElement("input", {
     type: "date",
     name: "from",
     value: value.from || "",
@@ -29012,7 +29012,7 @@ function DateRangePicker(_ref) {
     name: "to",
     value: value.to || "",
     onChange: handleChange
-  })));
+  }))));
 }
 
 },{"react":11}],19:[function(require,module,exports){

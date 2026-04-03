@@ -4,7 +4,10 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "demo:build": "browserify src/demo.js -o demo/bundle.demo.js -t [ babelify ]",
+    "demo:watch": "watchify src/demo.js -o demo/bundle.demo.js -t [ babelify ] -v",
+    "demo:serve": "serve demo -l 4173"
   },
   "keywords": [],
   "author": "Masud Parvez Riam",
@@ -19,9 +22,15 @@
     "@babel/preset-env": "^7.29.2",
     "@babel/preset-react": "^7.28.5",
     "babelify": "^10.0.0",
-    "browserify": "^17.0.1"
+    "browserify": "^17.0.1",
+    "serve": "^14.2.6",
+    "watchify": "^4.0.0"
   },
   "volta": {
     "node": "16.20.2"
+  },
+  "dependencies": {
+    "bootstrap": "^5.3.8",
+    "reactstrap": "^9.2.3"
   }
 }
