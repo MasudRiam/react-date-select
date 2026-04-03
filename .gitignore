@@ -11,9 +11,8 @@ The `--cached` flag removes it from git only — it won't delete the folder from
 **Full recommended `.gitignore` for Node.js projects:**
 ```
 node_modules/
-.env
-.env.local
 dist/
 build/
 .DS_Store
 *.log
+config.bat
